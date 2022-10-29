@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 10% 1fr;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+header{
+    background-color: #171a21;
+}
+
+header h1{
+    font-family: Arial, Helvetica, Verdana;
+    color: #c7d5e0;
+    font-size: 80px;
+    padding-left: 5px;
+}
+
+#left-bar{
+    background-color: #1b2838;
+    height: 100%;
+}
+
+#search{
+    height: 20vh;
+    padding-top: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+#search-box{
+    width: 70%;
+    height: 4.5vh;
+    margin-bottom: 5px;
+
+    background-color: #3A6181 ;
+    border-style: none;
+    border-radius: 2px;
+    outline-style: solid;
+    outline-color: #2a475e;
+    outline-width: 2px;
+
+    font-family: Arial, Helvetica, Verdana;
+    font-size: 2.5vh;
+    padding-left: 10px;
+    color: #c7d5e0;
+}   
+
+#price-input{
+    margin-top: 15px;
+    width: 70%;
+}
+
+#games{
+    width: 100%;
+    background-color: #2a475e ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1%;
+    padding-bottom: 20px;
+
+}
+
+.game{
+    opacity: 80%;
+    background-color: #1b2838;
+    color: #c7d5e0;
+    margin: 10px; margin-bottom: 10px;
+
+    outline-color: #171a21;
+    outline-style: solid;
+    outline-width: 2px;
+
+    border-radius: 5px;
+    height: 27vh;
+    width: 192px;
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, Verdana;
+    transition: all 0.5s;
+}
+
+.game:hover{
+    opacity: 100%;
+}
+
+.game img{
+    width: 100%;
+}
+
+.game-title{
+    font-size: 2.5vh;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.game-price{
+    font-size: 2.5vh;
+    align-self: center;
+    margin: 0px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#modal-button{
+    display: none;
+}
+
+.modal-content {
+   background-color:#1b2838;
+   color: #c7d5e0;
+}
+
+#close-button{
+    color: white;
+}
+
+#page-buttons-div{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #c7d5e0;
+}
+.page-buttons{
+    font-family: Arial, Helvetica, Verdana;
+    font-size: 15px;
+    color: #c7d5e0;
+
+    background-color: transparent;
+    border-width: 0px;
+
+    height: 40px;
+    width: 120px;
+}
+
+#page-number{
+    text-align: center;
+    font-size: 15px;
+
+    height: 40px;
+    margin-left: 7px;
+    margin-right: 2px;
+    padding-top: 9px;
+
+}
